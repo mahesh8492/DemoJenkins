@@ -12,6 +12,11 @@ pipeline {
                 bat 'mvn clean package'
             }
         }
+        stage('JaCoCo Report') {
+            steps {
+                jacoco()
+            }
+        }
         
         stage('Publishing') {
             steps {
