@@ -19,12 +19,12 @@ pipeline {
         }
          stage('Build Docker Iamge') {
             steps {
-               
+               echo 'Building Docker Image'
             }
         }
          stage('Push Docker Image to Docker Hub') {
             steps {
-              
+              echo 'Pushing Docker Image'
             }
         }
         stage('Publishing') {
